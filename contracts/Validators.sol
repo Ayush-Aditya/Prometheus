@@ -15,8 +15,8 @@ contract Validators{
         string accountcreate;
     }
 
-    mapping (address=>validator) val;
-    mapping (address=>student) studentCredentials;     
+    mapping (address=>validator) public  val;
+    mapping (address=>student) public  studentCredentials;     
 
     constructor(string memory nam, string memory inst){
         // val[msg.sender].name=nam;
@@ -49,7 +49,6 @@ contract Validators{
             isadmin : true,
             institution : val[msg.sender].institution
         });
-
     }
     
     function addCredentials(address ad,string memory nam , string memory inst , bytes32 file_has)public isValidator{
