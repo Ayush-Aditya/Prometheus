@@ -19,9 +19,6 @@ contract Validators{
     mapping (address=>student) public  studentCredentials;     
 
     constructor(string memory nam, string memory inst){
-        // val[msg.sender].name=nam;
-        // val[msg.sender].isadmin=true;
-        // val[msg.sender].institution=inst;
         val[msg.sender]=validator({
             name : nam,
             isadmin : true,
