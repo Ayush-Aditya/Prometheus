@@ -126,8 +126,8 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📧 Contact
 For any inquiries or feedback, feel free to reach out:
 - **Name:** Team Prometheus
-- **Members:** Ayush Aditya
-               Abhishek Sahu
+- **Members:** Ayush Aditya,
+               Abhishek Sahu,
                Akshat Gupta
 
 ---
