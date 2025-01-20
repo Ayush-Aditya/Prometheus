@@ -11,7 +11,7 @@ contract Validators{
     struct student{
         string name;
         string institution;
-        bytes32 file_hash;
+        string file_link;
         string accountcreate;
     }
 
@@ -48,17 +48,17 @@ contract Validators{
         });
     }
     
-    function addCredentials(address ad,string memory nam , string memory inst , bytes32 file_has)public isValidator{
+    function addCredentials(address ad,string memory nam , string memory inst , string memory file_lin)public isValidator{
             
         studentCredentials[ad].name = nam;
         studentCredentials[ad].institution = inst;
-        studentCredentials[ad].file_hash = file_has;
+        studentCredentials[ad].file_link = file_lin;
             
     }
 
-    function getStudent(address studentAddr) public view returns (string memory, string memory, bytes32, string memory) {
+    function getStudent(address studentAddr) public view returns (string memory, string memory, string memory, string memory) {
         student memory s = studentCredentials[studentAddr];
-        return (s.name, s.institution, s.file_hash, s.accountcreate);
+        return (s.name, s.institution, s.file_link, s.accountcreate);
     }
 
 }
