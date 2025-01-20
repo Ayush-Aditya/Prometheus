@@ -26,7 +26,7 @@ This project leverages the power of blockchain technology to revolutionize the w
 ### **Blockchain Tools**
 - **Truffle Framework:** For writing, testing, and deploying smart contracts.
 - **Ganache:** Local Ethereum blockchain network for development and testing.
-- **Web3.js:** JavaScript library for interacting with the blockchain from the frontend.
+- **Web3.js:** JavaScript library for interacting with the blockchain from the front end.
 
 ---
 
